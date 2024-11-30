@@ -1,0 +1,115 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+
+.highlight-text {
+  color: var(--color-lightcyan);
+}
+
+.title-container {
+  margin: 0;
+  position: absolute;
+  top: 7rem;
+  left: 3.125rem;
+  font-size: 6rem;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  width: 45rem;
+  height: auto;
+}
+
+.icon {
+  position: absolute;
+  top: 22rem;
+  width: 5rem !important;
+  height: 5rem !important;
+  overflow: hidden;
+  filter: invert(0%);
+}
+
+.icon-linkedin {
+  left: 8.125rem;
+}
+
+.icon-github {
+  left: 15.125rem;
+}
+
+.contact,
+.main-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-container {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.main-content {
+  align-self: stretch;
+  height: 48.375rem;
+  background-color: var(--color-teal);
+  flex-shrink: 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: 4.5rem;
+  color: var(--color-lightcoral);
+  font-family: var(--font-roboto);
+}
+
+.contact {
+  width: 100%;
+  background-color: var(--color-darkslategray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4rem var(--padding-15xl) var(--padding-43xl);
+  box-sizing: border-box;
+  gap: 4rem;
+  line-height: normal;
+  letter-spacing: normal;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 750px) {
+  .title-container {
+    font-size: 3.188rem;
+  }
+  .contact {
+    gap: var(--gap-9xl);
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .header {
+    width: 56.813rem;
+  }
+  .main-content {
+    height: auto;
+    min-height: 774;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title-container {
+    font-size: var(--font-size-19xl);
+  }
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  filter: invert(100%);
+}

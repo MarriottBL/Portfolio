@@ -1,0 +1,31 @@
+.projects2 {
+  width: 5.5rem;
+  cursor: pointer;
+}
+.about-us2,
+.contact1,
+.projects2 {
+  text-decoration: none;
+  height: 3.375rem;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+}
+.contact1 {
+  cursor: pointer;
+}
+.nav-bar {
+  margin: 0;
+  width: 24.125rem;
+  height: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-26xl);
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

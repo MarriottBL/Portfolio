@@ -1,0 +1,26 @@
+.brandon-marriott1 {
+  margin: 0;
+  height: 2.688rem;
+  width: 17.25rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.brandon-marriott {
+  height: 3.625rem;
+  width: 17rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-mini) 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

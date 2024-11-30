@@ -1,0 +1,49 @@
+.track {
+  width: 41.188rem;
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--m3-sys-light-shadow);
+  height: 0.25rem;
+  z-index: 0;
+}
+.stop,
+.stop-shape {
+  height: 0.25rem;
+  width: 0.25rem;
+  position: absolute;
+  top: calc(50% - 2px);
+}
+.stop-shape {
+  left: calc(50% - 2px);
+  border-radius: var(--br-7xl);
+  background-color: var(--m3-sys-light-shadow);
+}
+.stop {
+  margin: 0 !important;
+  right: 0;
+  z-index: 1;
+}
+.track1 {
+  height: 0.75rem;
+  width: 41.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.track-and-stop {
+  padding: 0 0 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.linear-determinate-progress-in,
+.track-and-stop {
+  width: 41.313rem;
+  height: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

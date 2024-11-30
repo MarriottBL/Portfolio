@@ -1,0 +1,28 @@
+.brandon-marriott-container,
+.nav-bar-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.nav-bar-wrapper {
+  margin: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0 0;
+  box-sizing: border-box;
+}
+.brandon-marriott-container {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 750px) {
+  .nav-bar-wrapper {
+    display: none;
+  }
+}

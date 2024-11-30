@@ -1,0 +1,80 @@
+.img-icon {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+.i-am-a {
+  position: relative;
+  text-shadow: 0 4px 4px #000;
+  font-size: var(--font-size-13xl);
+}
+
+.lets-connect-button {
+  background-color: var(--color-navajowhite);
+  color: var(--color-darkslategray);
+  padding: 0.5rem 1rem;
+  border-radius: var(--br-6xs);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.lets-connect-button {
+  width: 8.563rem;
+  object-fit: contain;
+}
+.lets-connect-button:hover {
+  background-color: var(--color-peru);
+}
+
+.lets-connect-button-parent {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.i-am-a-full-stack-developer-ba-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--color-teal);
+  gap: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: var(--br-6xs);
+}
+.hero-content {
+  text-align: center;
+  color: var(--color-white);
+  padding: 1rem;
+  max-width: 50%;
+}
+@media screen and (max-width: 1125px) {
+  .hero-box {
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hero-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .connect,
+  .i-am-a {
+    font-size: var(--font-size-lgi);
+  }
+}
+
+.lets-connect-button:hover{
+  background-color: var(--color-peru);
+}
