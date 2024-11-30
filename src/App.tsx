@@ -9,7 +9,6 @@ import HomePage from "./pages/HomePage";
 import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/Projects";
-import Footer from "./components/Footer";
 
 function App() {
   const action = useNavigationType();
