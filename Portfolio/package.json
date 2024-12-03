@@ -32,10 +32,9 @@
     "workbox-cli": "^7.3.0"
   },
   "scripts": {
-    "start": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -x .gitignore"
   },
   "eslintConfig": {
     "root": true
