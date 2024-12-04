@@ -1,20 +1,16 @@
-import { BrowserRouter } from "react-router-dom";
 import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import Contact from "./pages/Contact";
+import { BrowserRouter, Route, Routes, useLocation, useNavigationType } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
+import HomePage from "./pages/HomePage";
 import Projects from "./pages/Projects";
+import "./global.css";
 
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
+
 
   useEffect(() => {
     if (action !== "POP") {
@@ -60,8 +56,7 @@ function App() {
   }, [pathname]);
 
   return (
-    <BrowserRouter basename="/Portfolio"
-    >
+    <BrowserRouter basename={import.meta.env.MODE === "production" ? "/Portfolio" : "/"}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
