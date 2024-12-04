@@ -60,7 +60,7 @@ function App() {
   }, [pathname]);
 
   return (
-    <BrowserRouter basename="/Portfolio"
+    <BrowserRouter basename="/portfolio"
     >
       <Routes>
         <Route path="/" element={<HomePage />} />
