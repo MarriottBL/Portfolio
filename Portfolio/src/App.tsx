@@ -60,7 +60,8 @@ function App() {
   }, [pathname]);
 
   return (
-    <BrowserRouter basename="/Portfolio">
+    <BrowserRouter basename="/Portfolio"
+    >
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
