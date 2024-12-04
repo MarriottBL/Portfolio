@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import { useEffect } from "react";
 import {
   Routes,
@@ -59,14 +60,14 @@ function App() {
   }, [pathname]);
 
   return (
-    <>
+    <BrowserRouter basename="/Portfolio">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-    </>
+    </BrowserRouter>
   );
 }
 
